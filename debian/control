@@ -1,21 +1,21 @@
-Source: debian-archive-keyring
+Source: lodlabs-keyring
 Priority: important
 Section: misc
-Maintainer: Debian Release Team <packages@release.debian.org>
+Maintainer: David Tulloh <debian-david@tulloh.id.au>
 Build-Depends: debhelper (>= 7), jetring, gnupg
 Standards-Version: 3.9.3
 
-Package: debian-archive-keyring
+Package: lodlabs-keyring
 Architecture: all
 Multi-Arch: foreign
 Depends: gpgv, ${misc:Depends}
 Recommends: gnupg
 Breaks: apt (<< 0.7.25.1)
-Description: GnuPG archive keys of the Debian archive
+Description: GnuPG archive keys of the lodlabs archive
  The Debian project digitally signs its Release files. This package
- contains the archive keys used for that.
+ contains the archive keys used for that by lodlabs.
 
-Package: debian-archive-keyring-udeb
+Package: lodlabs-keyring-udeb
 XC-Package-Type: udeb
 Priority: optional
 Architecture: all
@@ -24,5 +24,5 @@ Depends: ${misc:Depends}
 Recommends: gpgv-udeb
 Description: GnuPG keys of the Debian archive
  The Debian project digitally signs its Release files. This package
- contains the archive keys used for that, in a minimal form for use
- in the installer.
+ contains the archive keys used for that by lodlabs, in a minimal form
+ for use in the installer.

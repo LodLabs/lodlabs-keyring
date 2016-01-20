@@ -5,7 +5,7 @@ set -e
 if [ "$1" = "purge" ]
 then
   # Remove the symlink
-  rm -f /etc/apt/trusted.gpg.d/debian-archive-keyring.gpg
+  rm -f /etc/apt/trusted.gpg.d/lodlabs-keyring.gpg
 fi
 
 #DEBHELPER#
