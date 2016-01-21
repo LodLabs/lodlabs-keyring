@@ -1,12 +1,20 @@
-README for the debian-archive-keyring package
-=============================================
+README for the lodlabs-keyring package
+======================================
 
 Introduction
 ------------
 
 The Debian project signs its Release files that are stored on the
-Debian ftp-server and its mirrors with the keys contained in this
-packages.
+Debian ftp-server and its mirrors with the keys contained in the
+debian-archive-keyring package.
+
+This is a clone of debian-archive-keyring which allows me to sign my
+own packages for distribution on my own private package server.
+
+The project is provided at https://github.com/lod/lodlabs-keyring to
+assist others following the same path. Some details of how I usurped
+the original package are at
+http://david.tulloh.id.au/packaging-an-automated-login/
 
 A quick overview about this package:
 
@@ -15,10 +23,10 @@ A quick overview about this package:
   The signatures of acquired Release files is checked against this
   key database. It hence contains all keys of still releases that
   are still supported and need to be active.
-* /usr/share/keyrings/debian-archive-keyring.gpg:
+* /usr/share/keyrings/lodlabs-keyring.gpg:
   A keyring including all actively used keys to sign Release files in
   our supported releases is shipped in /usr/share/keyrings.
-* /usr/share/keyrings/debian-archive-removed-keys.gpg:
+* /usr/share/keyrings/lodlabs-removed-keys.gpg:
   A keyring including all keys used by previous releases, which are
   no longer supported. These keys are no longer used to sign
   Release files.
